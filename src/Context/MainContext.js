@@ -10,8 +10,8 @@ export const MainContextProvider = (props) => {
 
     useEffect(() => {
         if (Message!=="") {
-            var regmsg = /\d{2}\/\d{2}\/\d{2,4},\s\d{0,2}:\d{2} .[m,M] - .*:/g
-            var regdate = /\d{2}\/\d{2}\/\d{2,4}/g
+            var regmsg = /\d{0,2}\/\d{0,2}\/\d{2,4},\s\d{0,2}:\d{2} .[m,M] - .*:/g
+            var regdate = /\d{0,2}\/\d{0,2}\/\d{2,4}/g
             var regtime = /\d{0,2}:\d{2} .[m,M]/g
             var regname = /-.*: /g
 
